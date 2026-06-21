@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 	<link rel="stylesheet" type="text/css" href="css/loading.css">
-	<link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet/less" href="cake.less"> 
 	
 	<style type="text/css" id="less:birthday-cake">
@@ -99,9 +99,53 @@
 	
 	@keyframes fuego {
 	  0%, 100% { transform: scale(1); background: rgba(254, 248, 97, 0.5); }
-	  50% { transform: scale(1.1) left; background: rgba(255, 50, 0, 0.6); }
+	  50% { transform: scale(1.1); background: rgba(255, 50, 0, 0.6); }
 	}
 	</style>
 </head>
+
+<div class="loading"></div>
+
 <body>
-    <!-- The rest of your HTML layout and body elements should go right here -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<img src="assets/images/bulb_off.png" id="bulb" class="img-responsive center-block" alt="Bulb">
+			</div>
+		</div>
+
+		<div class="row message-container">
+			<div class="col-md-12 text-center">
+				<div class="cake">
+					<div class="velas">
+						<div class="fuego"></div>
+						<div class="fuego"></div>
+						<div class="fuego"></div>
+						<div class="fuego"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="navbar navbar-default navbar-fixed-bottom">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<button class="btn btn-primary" id="turn_on">Turn On Lights</button>
+					<button class="btn btn-primary" id="play">Play Music</button>
+					<button class="btn btn-primary" id="bannar_coming">Let's Decorate</button>
+					<button class="btn btn-primary" id="balloons_flying">Fly Balloons</button>
+					<button class="btn btn-primary" id="cake_fadein">Cake Time</button>
+					<button class="btn btn-primary" id="light_candle">Light Candle</button>
+					<button class="btn btn-primary" id="wish_message">Happy Birthday</button>
+					<button class="btn btn-primary" id="story">A Message for You</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
+	<script src="js/effect.js"></script>
+</body>
+</html>
