@@ -106,14 +106,21 @@
 
 <div class="loading"></div>
 
-<body>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12 text-center">
-				<img src="assets/images/bulb_off.png" id="bulb" class="img-responsive center-block" alt="Bulb">
-			</div>
-		</div>
+<audio class="song" controls loop style="display:none;">
+	<source src="hbd.mp3" type="audio/mpeg">
+</audio>
 
+<body>
+	<div class="bulb-holder html2canvas-ignore">
+		<div class="bulbs" id="bulb_yellow"></div>
+		<div class="bulbs" id="bulb_red"></div>
+		<div class="bulbs" id="bulb_blue"></div>
+		<div class="bulbs" id="bulb_green"></div>
+		<div class="bulbs" id="bulb_pink"></div>
+		<div class="bulbs" id="bulb_orange"></div>
+	</div>
+
+	<div class="container">
 		<div class="row message-container">
 			<div class="col-md-12 text-center">
 				<div class="cake">
